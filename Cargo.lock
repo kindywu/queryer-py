@@ -1747,16 +1747,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "queryer-py"
-version = "0.1.0"
-dependencies = [
- "pyo3",
- "pyo3-build-config",
- "queryer-sql-polars",
- "tokio",
-]
-
-[[package]]
 name = "queryer-sql-polars"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1771,6 +1761,16 @@ dependencies = [
  "tokio",
  "tracing",
  "tracing-subscriber",
+]
+
+[[package]]
+name = "queryer_py"
+version = "0.1.0"
+dependencies = [
+ "pyo3",
+ "pyo3-build-config",
+ "queryer-sql-polars",
+ "tokio",
 ]
 
 [[package]]
