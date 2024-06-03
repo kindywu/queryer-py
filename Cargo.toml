@@ -1,0 +1,15 @@
+[package]
+name = "queryer-py"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"] # 使用 cdylib 类型
+
+[dependencies]
+pyo3 = { version = "0.21.2", features = ["extension-module"] }
+queryer-sql-polars = "0.1.0"
+tokio = { version = "1.38.0", features = ["full"] }
+
+[build-dependencies]
+pyo3-build-config = "0.21.2"
